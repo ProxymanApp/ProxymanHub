@@ -3,24 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		746A11C2F31FC930D8D3E9F4 /* Pods_ProxymanHub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F72A9A908DFC31C0ACBB382C /* Pods_ProxymanHub.framework */; };
 		BA1EA2FE22B48760008A4F77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EA2FD22B48760008A4F77 /* AppDelegate.swift */; };
-		BA1EA30022B48760008A4F77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EA2FF22B48760008A4F77 /* ViewController.swift */; };
 		BA1EA30222B48762008A4F77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA1EA30122B48762008A4F77 /* Assets.xcassets */; };
 		BA1EA30522B48762008A4F77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA1EA30322B48762008A4F77 /* Main.storyboard */; };
+		BA1EA30E22B488CE008A4F77 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EA30D22B488CE008A4F77 /* SourceViewController.swift */; };
+		BA1EA31122B488DA008A4F77 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EA30F22B488DA008A4F77 /* ContentViewController.swift */; };
+		BA1EA31422B4893D008A4F77 /* SourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EA31322B4893D008A4F77 /* SourceFactory.swift */; };
+		BA1EA31722B48B68008A4F77 /* SourceTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EA31622B48B68008A4F77 /* SourceTableCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D28FE676266C54FF5FC2F47 /* Pods-ProxymanHub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProxymanHub.release.xcconfig"; path = "Target Support Files/Pods-ProxymanHub/Pods-ProxymanHub.release.xcconfig"; sourceTree = "<group>"; };
 		BA1EA2FA22B48760008A4F77 /* ProxymanHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProxymanHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1EA2FD22B48760008A4F77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA1EA2FF22B48760008A4F77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA1EA30122B48762008A4F77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA1EA30422B48762008A4F77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA1EA30622B48762008A4F77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA1EA30722B48762008A4F77 /* ProxymanHub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProxymanHub.entitlements; sourceTree = "<group>"; };
+		BA1EA30D22B488CE008A4F77 /* SourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
+		BA1EA30F22B488DA008A4F77 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		BA1EA31322B4893D008A4F77 /* SourceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceFactory.swift; sourceTree = "<group>"; };
+		BA1EA31622B48B68008A4F77 /* SourceTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTableCellView.swift; sourceTree = "<group>"; };
+		DA66B942154062063BF66C18 /* Pods-ProxymanHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProxymanHub.debug.xcconfig"; path = "Target Support Files/Pods-ProxymanHub/Pods-ProxymanHub.debug.xcconfig"; sourceTree = "<group>"; };
+		F72A9A908DFC31C0ACBB382C /* Pods_ProxymanHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProxymanHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +38,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				746A11C2F31FC930D8D3E9F4 /* Pods_ProxymanHub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E05E7BD6D30407D3480605A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA66B942154062063BF66C18 /* Pods-ProxymanHub.debug.xcconfig */,
+				9D28FE676266C54FF5FC2F47 /* Pods-ProxymanHub.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		448BD1EA5F9ABB69E29D94C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F72A9A908DFC31C0ACBB382C /* Pods_ProxymanHub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BA1EA2F122B48760008A4F77 = {
 			isa = PBXGroup;
 			children = (
 				BA1EA2FC22B48760008A4F77 /* ProxymanHub */,
 				BA1EA2FB22B48760008A4F77 /* Products */,
+				1E05E7BD6D30407D3480605A /* Pods */,
+				448BD1EA5F9ABB69E29D94C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,11 +84,14 @@
 			isa = PBXGroup;
 			children = (
 				BA1EA2FD22B48760008A4F77 /* AppDelegate.swift */,
-				BA1EA2FF22B48760008A4F77 /* ViewController.swift */,
 				BA1EA30122B48762008A4F77 /* Assets.xcassets */,
 				BA1EA30322B48762008A4F77 /* Main.storyboard */,
 				BA1EA30622B48762008A4F77 /* Info.plist */,
 				BA1EA30722B48762008A4F77 /* ProxymanHub.entitlements */,
+				BA1EA30D22B488CE008A4F77 /* SourceViewController.swift */,
+				BA1EA30F22B488DA008A4F77 /* ContentViewController.swift */,
+				BA1EA31622B48B68008A4F77 /* SourceTableCellView.swift */,
+				BA1EA31322B4893D008A4F77 /* SourceFactory.swift */,
 			);
 			path = ProxymanHub;
 			sourceTree = "<group>";
@@ -70,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BA1EA30A22B48762008A4F77 /* Build configuration list for PBXNativeTarget "ProxymanHub" */;
 			buildPhases = (
+				2AE26D59A8140C7CEBEA4E15 /* [CP] Check Pods Manifest.lock */,
 				BA1EA2F622B48760008A4F77 /* Sources */,
 				BA1EA2F722B48760008A4F77 /* Frameworks */,
 				BA1EA2F822B48760008A4F77 /* Resources */,
+				DE3B1F352DA7AF55FC1D2F25 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,13 +163,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2AE26D59A8140C7CEBEA4E15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProxymanHub-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE3B1F352DA7AF55FC1D2F25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProxymanHub/Pods-ProxymanHub-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ProxymanHub/Pods-ProxymanHub-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ProxymanHub/Pods-ProxymanHub-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BA1EA2F622B48760008A4F77 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA1EA30022B48760008A4F77 /* ViewController.swift in Sources */,
+				BA1EA31122B488DA008A4F77 /* ContentViewController.swift in Sources */,
 				BA1EA2FE22B48760008A4F77 /* AppDelegate.swift in Sources */,
+				BA1EA31422B4893D008A4F77 /* SourceFactory.swift in Sources */,
+				BA1EA31722B48B68008A4F77 /* SourceTableCellView.swift in Sources */,
+				BA1EA30E22B488CE008A4F77 /* SourceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +349,7 @@
 		};
 		BA1EA30B22B48762008A4F77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA66B942154062063BF66C18 /* Pods-ProxymanHub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ProxymanHub/ProxymanHub.entitlements;
@@ -288,6 +369,7 @@
 		};
 		BA1EA30C22B48762008A4F77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D28FE676266C54FF5FC2F47 /* Pods-ProxymanHub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ProxymanHub/ProxymanHub.entitlements;
