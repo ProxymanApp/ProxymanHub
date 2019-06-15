@@ -851,15 +851,21 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
+                            <progressIndicator hidden="YES" wantsLayer="YES" horizontalHuggingPriority="750" verticalHuggingPriority="750" maxValue="100" bezeled="NO" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="iXt-ex-M4P">
+                                <rect key="frame" x="217" y="142" width="16" height="16"/>
+                            </progressIndicator>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="vab-iK-Mmg" secondAttribute="trailing" id="50f-7e-efe"/>
                             <constraint firstItem="vab-iK-Mmg" firstAttribute="leading" secondItem="k9i-Fu-6VT" secondAttribute="leading" id="7eB-Ri-TOE"/>
+                            <constraint firstItem="iXt-ex-M4P" firstAttribute="centerY" secondItem="k9i-Fu-6VT" secondAttribute="centerY" id="SGW-to-ksc"/>
                             <constraint firstItem="vab-iK-Mmg" firstAttribute="top" secondItem="k9i-Fu-6VT" secondAttribute="top" id="oQo-xp-gEV"/>
                             <constraint firstAttribute="bottom" secondItem="vab-iK-Mmg" secondAttribute="bottom" id="sgw-FQ-sVx"/>
+                            <constraint firstItem="iXt-ex-M4P" firstAttribute="centerX" secondItem="k9i-Fu-6VT" secondAttribute="centerX" id="yvu-vZ-skD"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loaderView" destination="iXt-ex-M4P" id="kti-yG-66X"/>
                         <outlet property="textView" destination="GfQ-o0-yQr" id="Acw-no-VdJ"/>
                     </connections>
                 </viewController>

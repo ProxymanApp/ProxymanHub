@@ -15,6 +15,7 @@
 		BA1EA31122B488DA008A4F77 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EA30F22B488DA008A4F77 /* ContentViewController.swift */; };
 		BA1EA31422B4893D008A4F77 /* SourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EA31322B4893D008A4F77 /* SourceFactory.swift */; };
 		BA1EA31722B48B68008A4F77 /* SourceTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EA31622B48B68008A4F77 /* SourceTableCellView.swift */; };
+		BA1EA31922B49028008A4F77 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1EA31822B49028008A4F77 /* Source.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		BA1EA30F22B488DA008A4F77 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		BA1EA31322B4893D008A4F77 /* SourceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceFactory.swift; sourceTree = "<group>"; };
 		BA1EA31622B48B68008A4F77 /* SourceTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceTableCellView.swift; sourceTree = "<group>"; };
+		BA1EA31822B49028008A4F77 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
 		DA66B942154062063BF66C18 /* Pods-ProxymanHub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProxymanHub.debug.xcconfig"; path = "Target Support Files/Pods-ProxymanHub/Pods-ProxymanHub.debug.xcconfig"; sourceTree = "<group>"; };
 		F72A9A908DFC31C0ACBB382C /* Pods_ProxymanHub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProxymanHub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -92,6 +94,7 @@
 				BA1EA30F22B488DA008A4F77 /* ContentViewController.swift */,
 				BA1EA31622B48B68008A4F77 /* SourceTableCellView.swift */,
 				BA1EA31322B4893D008A4F77 /* SourceFactory.swift */,
+				BA1EA31822B49028008A4F77 /* Source.swift */,
 			);
 			path = ProxymanHub;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 			files = (
 				BA1EA31122B488DA008A4F77 /* ContentViewController.swift in Sources */,
 				BA1EA2FE22B48760008A4F77 /* AppDelegate.swift in Sources */,
+				BA1EA31922B49028008A4F77 /* Source.swift in Sources */,
 				BA1EA31422B4893D008A4F77 /* SourceFactory.swift in Sources */,
 				BA1EA31722B48B68008A4F77 /* SourceTableCellView.swift in Sources */,
 				BA1EA30E22B488CE008A4F77 /* SourceViewController.swift in Sources */,

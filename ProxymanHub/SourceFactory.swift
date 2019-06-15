@@ -23,21 +23,35 @@ enum ContentType {
     }
 }
 
-struct Source {
+protocol SourceType {
 
-    let contentType: ContentType
-    let method: HTTPMethod
-    let shortDescription: String
+    var contentType: ContentType { get }
+    var method: HTTPMethod { get }
+    var parameters: Parameters? { get }
+    var encoding: ParameterEncoding { get }
+    var headers: HTTPHeaders { get }
+}
 
-    init(contentType: ContentType, method: HTTPMethod) {
-        self.contentType = contentType
-        self.method = method
-        self.shortDescription = "\(contentType.toStr): \(method.rawValue.uppercased())"
+extension SourceType {
+
+    var baseURL: String {
+        return "https://httpbin.org"
+    }
+
+    var url: String {
+        return "\(baseURL)/\(method.rawValue)"
+    }
+
+    var shortDescription: String {
+        return "\(contentType.toStr): \(method.rawValue.uppercased())"
+    }
+
+    func request() -> Request {
+        return AF.request(url, method: method, parameters: parameters, encoding: encoding, headers: headers)
     }
 }
 
 final class SourceFactory {
 
-    let sources: [Source] = [Source(contentType: .applicationJson, method: .get),
-                             Source(contentType: .formURLEncoded, method: .post)]
+    let sources: [SourceType] = [JSONGet(), JSONPost(), URLEncodedGet(), URLEncodedPost()]
 }
